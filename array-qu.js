@@ -72,8 +72,3 @@ let str="my name is vikas my name is vikas"
     console.log(word1);
 }
 
-function obj12(){
-    console.log("abcd");
-    
-}
-obj12();
