@@ -72,3 +72,4 @@ let str="my name is vikas my name is vikas"
     console.log(word1);
 }
 
+console.log("arslan now");
