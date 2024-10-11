@@ -56,26 +56,23 @@
 
 // }
 
-function Emp1(naam,sub,detail,objII) {
+// function Emp1(naam,sub,detail,objII) {
 
-    this.name=naam
-    this.sub=sub
-    this.jaankari=detail
-    this.secondobj=objII
+//     this.name=naam
+//     this.sub=sub
+//     this.jaankari=detail
+//     this.secondobj=objII
 
-}
+// }
 
-let emp1obj=new Emp1("arslan","hindi","all",obj={
-    name:"arshad",
-    sub:"english",
-    details:"all",
+// let emp1obj=new Emp1("arslan","hindi","all",obj={
+//     name:"arshad",
+//     sub:"english",
+//     details:"all",
 
-})
+// })
 
-console.log(emp1obj);
-
-
-
+// console.log(emp1obj);
 
 // let emp1obj={
 //     name:"arslan",
@@ -89,3 +86,72 @@ console.log(emp1obj);
 //     }
 
 // }
+
+// function Emp1(naam,sub,detail,objII) {
+
+//     this.name=naam
+//     this.sub=sub
+//     this.jaankari=detail
+//     this.secondobj=objII
+//     console.log(this.secondobj)
+
+// }
+
+// let rv=new Emp1("arslan","hindi","all",()=>{console.log("jdjdjd")})
+
+
+// rv.secondobj();
+// console.log(rv);
+
+
+// function Student(naam,umar,jaankari,Student2) {
+//     this.name=naam,
+//     this.age=umar,
+//     this.details=jaankari
+//     this.Student2=Student2
+    
+// }
+
+// function Student2(kaam,name,jaankari) {
+//     this.work=kaam,
+//     this.naam=name,
+//     this.detail=jaankari
+    
+// }
+
+// let detail=new Student("arslan",18,"all")
+
+// let alld=new Student2("aux","rohan","sub",)
+
+
+// let newall = new Student("aux","rohan","sub",alld)
+// console.log(newall);
+
+
+//chatgpt
+
+function Student(naam, umar, jaankari, student2) {
+    this.name = naam;
+    this.age = umar;
+    this.details = jaankari;
+    this.student2 = student2; // Use camelCase for property names
+}
+
+function Student2(kaam, naam, jaankari) {
+    this.work = kaam;
+    this.naam = naam;
+    this.detail = jaankari;
+}
+
+// Create an instance of Student
+let detail = new Student("Arslan", 18, "all");
+
+// Create an instance of Student2
+let student2Detail = new Student2("Aux", "Rohan", "sub");
+
+// Create an instance of Student and pass the Student2 instance
+let alld = new Student("Aux", 20, "sub", student2Detail);
+
+console.log(alld);
+
+
